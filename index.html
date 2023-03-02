@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form page</title>
+  </head>
+  <body>
+    <main>
+      <div class="img"></div>
+      <form action="#">
+        <h2>Registration Info</h2>
+        <input
+          required
+          autocomplete="off"
+          type="text"
+          name="name"
+          placeholder="Name"
+        />
+        <input
+          required
+          autocomplete="off"
+          type="text"
+          onfocus="(this.type = 'date')"
+          value="Birthday"
+          name="date"
+        />
+        <select required name="gender">
+          <option value="" disabled selected>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <input
+          required
+          autocomplete="off"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
+        <input
+          required
+          autocomplete="off"
+          type="mobile"
+          name="Phone"
+          placeholder="Phone"
+        />
+        <input type="submit" />
+      </form>
+    </main>
+  </body>
+</html>
